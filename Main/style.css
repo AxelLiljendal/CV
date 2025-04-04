@@ -4,20 +4,26 @@ body {
     font-family: "Fantasy", Copperplate;
 }
 
+/* this is an unorganized list */ 
 ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     background-color: #f3e4c2;
+    margin: 0;
+    padding: 0;
 }
 
+/* individual item links in the list */
 li a {
-    padding: 49px;
     display: block;
+    padding: 49px;
+    height: 100%;
     color: black;
     text-decoration: none;
 }
 
+/* this changes the color when hovering over an item */
 li a:hover {
     background-color: #f0cd83;
 }
@@ -42,20 +48,23 @@ li a:hover {
     height: 7vh;
 }
 
+/* this is a class that contains the main logo of the site inside header */
 .logo {
     display: flex;
     justify-content: center;
     flex: 1;
 }
 
+/* this is a class that has a navigation bar menu inside header */
 .nav {
     display: flex;
+    align-items: stretch;
     flex-direction: row;
     justify-content: left;
     flex: 5;
 }
 
-/* main container */
+/* this is the main container class */
 .main {
     display: flex;
     height: 93vh;
@@ -64,7 +73,7 @@ li a:hover {
     background-color: rgb(255, 255, 255);
 }
 
-/* footer container */
+/* this is the footer container class */
 .footer {
     display: flex;
     height: 25vh;
