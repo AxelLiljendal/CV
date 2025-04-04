@@ -1,0 +1,21 @@
+/* This file will make sure everything runs the same on different browsers / units */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: sans-serif;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  button, input, textarea, select {
+    font: inherit;
+  }
