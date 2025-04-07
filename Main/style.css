@@ -4,8 +4,24 @@ body {
     font-family: "Fantasy", Copperplate;
 }
 
+h1 {
+    font-size: 150px;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+    font-size: 75px;
+}
+
 /* this is an unorganized list */ 
-ul {
+.knappar {
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -15,7 +31,7 @@ ul {
 }
 
 /* individual item links in the list */
-li a {
+.knapplänk {
     display: block;
     padding: 49px;
     height: 100%;
@@ -24,7 +40,7 @@ li a {
 }
 
 /* this changes the color when hovering over an item */
-li a:hover {
+.knapplänk:hover {
     background-color: #f0cd83;
 }
 
@@ -46,6 +62,7 @@ li a:hover {
     align-items: center;
     background-color: #f3e4c2;
     height: 7vh;
+    z-index: 1000;
 }
 
 /* this is a class that contains the main logo of the site inside header */
@@ -67,16 +84,52 @@ li a:hover {
 /* this is the main container class */
 .main {
     display: flex;
-    height: 93vh;
-    text-align: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    margin-top: 12vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    gap: 100px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: black;
+    gap: 3000px;
+    padding: 5%;
+    flex: 4;
+}
+
+.aside {
+    position: sticky;
+    border-style: solid;
+    border-color: black;
+    padding: 2%;
+    flex: 1;
+    top: 12vh;
+    height: 50vh;
+}
+
+.standard-list {
+    list-style-type: none;
+    
+}
+
+.standard-länk {
+    color: rgb(0, 153, 255);
+    text-decoration: none;
+}
+
+.standard-länk:hover {
+    color: rgba(0, 153, 255, 0.514);
 }
 
 /* this is the footer container class */
 .footer {
     display: flex;
-    height: 25vh;
+    height: 30vh;
     text-align: center;
     align-items: center;
     background-color: #f3e4c2;
