@@ -5,19 +5,19 @@ body {
 }
 
 h1 {
-    font-size: 16px;
+    font-size: 2.5rem;
 }
 
 h2 {
-
+    font-size: 2rem;
 }
-
+    
 h3 {
-
+    font-size: 1.5rem;
 }
 
 p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* this is an unorganized list */ 
@@ -25,7 +25,6 @@ p {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    background-color: #f3e4c2;
 }
 
 /* individual item links in the list */
@@ -33,12 +32,14 @@ p {
     display: block;
     color: black;
     text-decoration: none;
-    padding: 7%;
+    padding: 10px 15px;
 }
 
 /* this changes the color when hovering over an item */
 .knapplänk:hover {
-    background-color: #f0cd83;
+    background-color: #ffdc8c;
+    height: 110%;
+    width: 110%;
 }
 
 /* this is the main container */
@@ -58,8 +59,8 @@ p {
     text-align: center;
     align-items: center;
     background-color: #f3e4c2;
-    height: 7%;
-    font-size: 50px;
+    height: 4rem;
+    font-size: 25px;
     z-index: 1000;
 }
 
@@ -77,7 +78,7 @@ p {
     flex-direction: row;
     justify-content: left;
     flex: 5;
-    margin: 10%;
+    margin: 5rem;
 }
 
 /* this is the main container class */
@@ -141,7 +142,7 @@ p {
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 10%;
-    gap: 25px;
+    gap: 5px;
 }
 
 .form-container {
