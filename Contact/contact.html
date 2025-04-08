@@ -15,10 +15,10 @@
             <nav class="nav">
                 <ul class="knappar">
                     <li class="knapp-item">
-                        <a class ="knapplänk"href="../Main/index.html"title="home">Home</a>
+                        <a class ="knapplänk"href="../Main/index.html"title="home">Hem</a>
                     </li>
                     <li class="knapp-item">
-                    <a class ="knapplänk"href="../Contact/contact.html"title="contact">Contact</a>
+                    <a class ="knapplänk"href="../Contact/contact.html"title="contact">Kontakt</a>
                     </li>
                 </ul>
             </nav>
@@ -26,18 +26,34 @@
         <div class="contact-main-container">
             <h2>Kontakta mig</h2>
             <p>ägare@hotmail.com</p>
-            <h2>Fyll i formuläret nedan</h2>
-            <form>
-                <label for="fname">Namn:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="phone">Telefon:</label><br>
-                <input type="text" id="phone" name="phone"><br>
-                <label for="mail">Epost:</label><br>
-                <input type="text" id="Mail" name="Mail"><br>
-                <label for="description">Beskrivning (max 500 tecken):</label><br>
-                
-                <textarea id="ämne" name="ämne" placeholder="Skriv något.." style="height:200px"></textarea>
-            </form> 
+            <div class="form-container"></div>
+                <form>
+                    <h2>Formulär</h2>
+                    <p>Om du önskar få kontakt med mig kan du fylla i formuläret<p>
+                    <div class ="row">
+                        <label for="fname">Namn:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                    </div>
+                    <div class ="row">
+                        <label for="phone">Telefon:</label><br>
+                        <input type="text" id="phone" name="phone"><br>
+                    </div>
+                    <div class ="row">
+                        <label for="mail">Epost:</label><br>
+                        <input type="text" id="Mail" name="Mail"><br>
+                    </div>
+                    <div class ="row">
+                        <label for="description">Beskrivning (max 500 tecken):</label><br>
+                        <textarea id="ämne" name="ämne" placeholder="Skriv något.." style="height:200px"></textarea>
+                    </div>
+                    <div class ="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form> 
+        </div>
+        <div class="footer">
+            
+        </div>
         </div>
     </div>
 </body>
