@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-    font-size: 150px;
+    font-size: 16px;
 }
 
 h2 {
@@ -17,7 +17,7 @@ h3 {
 }
 
 p {
-    font-size: 75px;
+    font-size: 16px;
 }
 
 /* this is an unorganized list */ 
@@ -26,17 +26,14 @@ p {
     flex-direction: row;
     list-style-type: none;
     background-color: #f3e4c2;
-    margin: 0;
-    padding: 0;
 }
 
 /* individual item links in the list */
 .knapplänk {
     display: block;
-    padding: 49px;
-    height: 100%;
     color: black;
     text-decoration: none;
+    padding: 7%;
 }
 
 /* this changes the color when hovering over an item */
@@ -48,7 +45,7 @@ p {
 .container {
     display: flex;
     flex-direction: column;
-    font-size: 100px;
+    font-size: 16px;
 }
 
 /* header container */
@@ -61,7 +58,8 @@ p {
     text-align: center;
     align-items: center;
     background-color: #f3e4c2;
-    height: 7vh;
+    height: 7%;
+    font-size: 50px;
     z-index: 1000;
 }
 
@@ -69,16 +67,17 @@ p {
 .logo {
     display: flex;
     justify-content: center;
-    flex: 1;
+    flex: 2;
 }
 
 /* this is a class that has a navigation bar menu inside header */
 .nav {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     flex-direction: row;
     justify-content: left;
     flex: 5;
+    margin: 10%;
 }
 
 /* this is the main container class */
@@ -97,7 +96,7 @@ p {
     flex-direction: column;
     border-style: solid;
     border-color: black;
-    gap: 3000px;
+    gap: 500px;
     padding: 5%;
     flex: 4;
 }
@@ -109,7 +108,7 @@ p {
     padding: 2%;
     flex: 1;
     top: 12vh;
-    height: 50vh;
+    height: 83vh;
 }
 
 .standard-list {
@@ -133,4 +132,14 @@ p {
     text-align: center;
     align-items: center;
     background-color: #f3e4c2;
+}
+
+.contact-main-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    gap: 30px;
 }
