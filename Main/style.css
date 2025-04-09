@@ -176,3 +176,17 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #f3e4c2a8;
 }
+
+.error {
+    color: red;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.error-box {
+    border: 2px solid red;
+}
+
+input.error-box, textarea.error-box {
+    border: 3px solid red;
+}
