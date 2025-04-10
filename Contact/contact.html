@@ -34,9 +34,9 @@
                     <h2>Formulär</h2>
                     <p>Om du önskar få kontakt med mig kan du fylla i formuläret<p>
                     <div class ="row">
-                        <label for="userName">Namn (för och efternamn):</label><br>
-                        <input type="text" id="userName" name="userName" class="validateuserName"/><br>
-                        <div class="error userNameErrorMessage"></div>
+                        <label for="fullName">Namn (för och efternamn):</label><br>
+                        <input type="text" id="fullName" name="fullName" class="validatefullName"/><br>
+                        <div class="error fullNameErrorMessage"></div>
                     </div>
                     <div class ="row">
                         <label for="phone">Telefon:</label><br>
@@ -55,7 +55,7 @@
                     </div>
                 </form> 
                 <div class ="row">
-                    <button type="submit" onclick="validateSubmit()" className="validateSubmit">Submit</button>
+                    <input type="submit" onclick="validateSubmit()" className="validateSubmit">
                     <div class ="formSentMessage" id="submitMessage"></div>
                 </div>
         </div>

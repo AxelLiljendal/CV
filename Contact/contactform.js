@@ -1,11 +1,11 @@
-let userNameInput = document.getElementById('userName').addEventListener('change', updateuserName);
+let fullNameInput = document.getElementById('fullName').addEventListener('change', updatefullName);
 let phoneInput = document.getElementById('phone').addEventListener('change', updatePhone);
 let mailInput = document.getElementById('mail').addEventListener('change', updateMail);
 let subjectInput = document.getElementById('subject').addEventListener('change', updateSubject);
 const submitMessage = document.getElementById('submitMessage');
 
-function updateuserName(e) {
-    let userName = e.target.value;
+function updatefullName(e) {
+    let fullName = e.target.value;
 }
 
 function updatePhone(e) {
@@ -27,11 +27,11 @@ function validateSubmit() {
     document.querySelectorAll(".error").forEach(div => div.textContent = "");
     document.querySelectorAll("input, textarea").forEach(field => field.classList.remove("error-box"));
 
-    // Validering userName
-    if(userName.value.trim().length <= 2 || userName.value.trim().length > 50) {
+    // Validering fullName
+    if(fullName.value.trim().length <= 2 || fullName.value.trim().length > 50) {
         check = false;
-        document.querySelector(".userNameErrorMessage").textContent = "Ditt namn måste fler än 2 bokstäver och mindre än 50 bokstäver";
-        userName.classList.add("error-box");
+        document.querySelector(".fullNameErrorMessage").textContent = "Ditt namn måste fler än 2 bokstäver och mindre än 50 bokstäver";
+        fullName.classList.add("error-box");
     }
 
     // phonepattern 
