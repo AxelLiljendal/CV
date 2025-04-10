@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="resetsheet" href="../Main/reset.css" />
     <link rel="stylesheet" href="../Main/style.css" />
-    <link rel="contactvalidation" href="contactform.js"/>
     <title>Contact - cv plattform</title>
 </head>
 <body>
@@ -31,33 +30,34 @@
             <h3>Telefon</h3>
             <p>070 492 32 71</p>
             <div class="form-container"></div>
-                <form>
+                <form name="test">
                     <h2>Formulär</h2>
                     <p>Om du önskar få kontakt med mig kan du fylla i formuläret<p>
                     <div class ="row">
-                        <label for="name">Namn (för och efternamn):</label><br>
-                        <input type="text" id="name" name="name" class="validateName"><br>
-                        <div class="error nameErrorMessage"></div>
+                        <label for="userName">Namn (för och efternamn):</label><br>
+                        <input type="text" id="userName" name="userName" class="validateuserName"/><br>
+                        <div class="error userNameErrorMessage"></div>
                     </div>
                     <div class ="row">
                         <label for="phone">Telefon:</label><br>
-                        <input type="text" id="phone" name="phone" class="validatePhone"><br>
+                        <input type="text" id="phone" name="phone" class="validatePhone"/><br>
                         <div class="error phoneErrorMessage"></div>
                     </div>
                     <div class ="row">
                         <label for="mail">Mail:</label><br>
-                        <input type="text" id="Mail" name="Mail" class="validateMail"><br>
+                        <input type="text" id="mail" name="Mail" class="validateMail"/><br>
                         <div class="error mailErrorMessage"></div>
                     </div>
                     <div class ="row">
                         <label for="subject">Beskrivning (max 500 tecken):</label><br>
-                        <textarea id="ämne" name="ämne" placeholder="Skriv något.." style="height:200px" class="validateSubject"></textarea>
+                        <textarea id="subject" name="subject" placeholder="Skriv något.." style="height:200px" class="validateSubject"></textarea>
                         <div class="error subjectErrorMessage"></div>
                     </div>
-                    <div class ="row">
-                        <input type="submit" value="Submit" class="validateSubmit">
-                    </div>
                 </form> 
+                <div class ="row">
+                    <button type="submit" onclick="validateSubmit()" className="validateSubmit">Submit</button>
+                    <div class ="formSentMessage" id="submitMessage"></div>
+                </div>
         </div>
         <div class="footer">
             
@@ -65,4 +65,5 @@
         </div>
     </div>
 </body>
+<script type="text/javascript"src="contactform.js"></script>
 </html>

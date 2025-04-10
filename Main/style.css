@@ -181,6 +181,7 @@ input[type=submit]:hover {
     color: red;
     font-size: 1rem;
     margin-top: 5px;
+    min-height: 10px;
 }
 
 .error-box {
@@ -189,4 +190,18 @@ input[type=submit]:hover {
 
 input.error-box, textarea.error-box {
     border: 3px solid red;
+}
+
+.formSentMessage {
+    color: black;
+    font-size: 1rem;
+    margin-top: 5px;
+    min-height: 10px;
+}
+
+.formSent-box {
+    border: 3px solid green;
+    font-size: 1rem;
+    margin-top: 5px;
+    min-height: 10px;
 }
