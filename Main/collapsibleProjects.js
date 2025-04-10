@@ -1,4 +1,4 @@
-var collapse = document.getElementById("collapsible");
+var collapse = document.querySelectorAll(".collapsible");
 
 var i;
 

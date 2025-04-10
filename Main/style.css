@@ -129,10 +129,16 @@ p {
 /* this is the footer container class */
 .footer {
     display: flex;
+    flex-direction: column;
     height: 30vh;
     text-align: center;
-    align-items: center;
+    justify-content: flex-end;
     background-color: #f3e4c2;
+    padding: 20px;
+}
+
+.socials {
+    padding: 20px;
 }
 
 .contact-main-container {
@@ -184,14 +190,6 @@ input[type=submit]:hover {
     min-height: 10px;
 }
 
-.error-box {
-    border: 2px solid red;
-}
-
-input.error-box, textarea.error-box {
-    border: 3px solid red;
-}
-
 .formSentMessage {
     color: black;
     font-size: 1rem;
@@ -207,8 +205,8 @@ input.error-box, textarea.error-box {
 }
 
 .collapsible {
-    background-color: aqua;
-    color: white;
+    background-color: solid white;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -219,7 +217,7 @@ input.error-box, textarea.error-box {
 }
 
 .active, .collapsible:hover {
-    background-color: green;
+    background-color: solid gray;
 }
 
 .collapsible:after {
@@ -239,5 +237,5 @@ input.error-box, textarea.error-box {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: aqua;
+    background-color: white;
 }
