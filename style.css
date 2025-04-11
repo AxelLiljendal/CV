@@ -121,19 +121,6 @@ li {
     flex: 3;
 }
 
-.quicksearch-list {
-    list-style-type: none;
-}
-
-.quicksearch-link {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-
-.quicksearch-link:hover {
-    color: white;
-}
-
 .aside {
     display: flex;
     position: sticky;
@@ -149,6 +136,19 @@ li {
     flex: 1;
     top: 20rem;
     height: 10rem;
+}
+
+.quicksearch {
+    list-style-type: none;
+}
+
+.quicksearch-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.quicksearch-link:hover {
+    color: white;
 }
 
 .contact-main-container {
@@ -251,7 +251,7 @@ input[type=submit]:hover {
 /* ============== */
 /* === FOOTER === */
 /* ============== */
-.footer {
+.footer-container {
     display: flex;
     flex-direction: column;
     height: 30vh;
@@ -273,12 +273,12 @@ input[type=submit]:hover {
 /* ========================= */
 
 /* Phones */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     body {
-        .header {
+        .header-container {
             font-size: 30px;
         }
-        .main {
+        .main-container {
             flex-direction: column;
             gap: 25px;
         }

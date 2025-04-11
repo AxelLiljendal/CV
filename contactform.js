@@ -30,7 +30,7 @@ function validateSubmit() {
     // Validering fullName
     if(fullName.value.trim().length <= 2 || fullName.value.trim().length > 50) {
         check = false;
-        document.querySelector(".fullNameErrorMessage").textContent = "Ditt namn måste fler än 2 bokstäver och mindre än 50 bokstäver";
+        document.querySelector(".fullNameErrorMessage").textContent = "Ditt namn måste innehålla mellan 3-50 bokstäver";
         fullName.classList.add("error-box");
     }
 
@@ -52,14 +52,14 @@ function validateSubmit() {
     // validering mail
     if(!mail.value.trim().includes("@")) {
         check = false;
-        document.querySelector(".mailErrorMessage").textContent = "Mail måste innehålla ett @";
+        document.querySelector(".mailErrorMessage").textContent = "Mail måste innehålla @";
         mail.classList.add("error-box");
     }
 
     // validering ämne
     if(subject.value.trim().length < 1 || subject.value.trim().length > 500) {
         check = false;
-        document.querySelector(".subjectErrorMessage").textContent = "Det måste vara mellan 1-500 tecken";
+        document.querySelector(".subjectErrorMessage").textContent = "Du kan endast skriva mellan 1-500 tecken";
         subject.classList.add("error-box");
     }
     
