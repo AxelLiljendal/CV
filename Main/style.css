@@ -25,19 +25,28 @@ p {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    height: 100%;
 }
 
 /* individual item links in the list */
 .knapplänk {
-    display: block;
-    color: black;
+    display: flex;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 0px 15px;
 }
 
 /* this changes the color when hovering over an item */
 .knapplänk:hover {
-    background-color: #ffdc8c;
+    background-color: lightcyan;
+}
+
+.knappar li {
+    height: 100%;
+    display: flex;
 }
 
 li {
@@ -59,7 +68,8 @@ li {
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: #f3e4c2;
+    border-bottom: solid black;
+    background-color: lightblue;
     width: 100%;
     height: 4rem;
     z-index: 1000;
@@ -80,12 +90,15 @@ li {
     flex: 1;
     justify-content: flex-start;
     padding-left: 1rem;
+    align-items: center;
+    height: 100%;
 }
 
 /* this is the main container class */
 .main {
     display: flex;
     flex-direction: row;
+    background-color: white;
     margin-top: 5rem;
     margin-bottom: 1rem;
     gap: 100px;
@@ -102,16 +115,20 @@ li {
 }
 
 .aside {
+    display: flex;
     position: sticky;
-    color: black;
+    background-color: lightblue;
+    border-radius: 50px;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding-right: 2rem;
+    margin-right: 2rem;
     padding-top: 1rem;
     font-size: 30px;
+    border-width: 2px;
     flex: 1;
-    top: 12vh;
-    height: 83vh;
+    top: 20rem;
+    height: 10rem;
 }
 
 .standard-list {
@@ -125,7 +142,7 @@ li {
 }
 
 .standard-länk:hover {
-    color: rgba(160, 160, 160, 0.514);
+    color: white;
 }
 
 /* this is the footer container class */
@@ -135,7 +152,7 @@ li {
     height: 30vh;
     text-align: center;
     justify-content: flex-end;
-    background-color: #f3e4c2;
+    background-color: lightblue;
     padding: 20px;
 }
 
@@ -147,33 +164,36 @@ li {
     display: flex;
     flex-direction: column;
     margin-top: 12vh;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
+    gap: 10px;
     padding-left: 2rem;
     justify-content: flex-start;
 }
 
 .form-container {
-    padding: 10px;
+    padding: 5px 10px;
 }
 
 .row {
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: 2px 5px;
+    margin-bottom: 2px;
     width: 50%;
 }
 
 input[type=submit] {
-    background-color: #f3e4c2;
+    background-color: lightblue;
+    border: solid black;
+    border-width: 1px;
+    border-radius: 10px;
     color: black;
     padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
     cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #f3e4c2a8;
+    background-color: lightcyan;
 }
 
 .error {
@@ -191,31 +211,32 @@ input[type=submit]:hover {
 }
 
 .formSent-box {
-    border: 3px solid green;
+    color: green;
     font-size: 1rem;
     margin-top: 5px;
     min-height: 10px;
 }
 
 .collapsible {
-    background-color: solid white;
+    background-color: lightblue;
+    border-radius: 10px;
+    border-width: 1px;
+    border: solid black;
     color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
     text-align: left;
-    outline: none;
     font-size: 15px;
 }
 
 .active, .collapsible:hover {
-    background-color: solid gray;
+    background-color: lightcyan;
 }
 
 .collapsible:after {
     content: '\002B';
-    color: white;
+    color: black;
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -249,6 +270,7 @@ input[type=submit]:hover {
             order: 1;
             height: auto;
             position: static;
+            margin-left: 2rem;
         }
         .article {
             order: 2;
