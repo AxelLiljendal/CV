@@ -239,3 +239,32 @@ input[type=submit]:hover {
     transition: max-height 0.2s ease-out;
     background-color: white;
 }
+
+/* ===== MEDIA QUERIES =====
+
+/* Phones */
+@media (max-width: 600px) {
+    body {
+        .header {
+
+        }
+        .main {
+            flex-direction: column;
+        }
+        .aside {
+            order: 1;
+            height: auto;
+            position: static;
+        }
+        .article {
+            order: 2;
+        }
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    body {
+        
+    }
+}
