@@ -38,8 +38,10 @@ p {
 /* this changes the color when hovering over an item */
 .knapplänk:hover {
     background-color: #ffdc8c;
-    height: 110%;
-    width: 110%;
+}
+
+li {
+    list-style: none;
 }
 
 /* this is the main container */
@@ -53,60 +55,60 @@ p {
 .header {
     display: flex;
     top: 0;
-    right: 0;
-    left: 0;
     position: fixed;
     text-align: center;
     align-items: center;
+    justify-content: center;
     background-color: #f3e4c2;
+    width: 100%;
     height: 4rem;
-    font-size: 25px;
     z-index: 1000;
+    font-size: 40px;
 }
 
 /* this is a class that contains the main logo of the site inside header */
 .logo {
     display: flex;
-    justify-content: center;
-    flex: 2;
+    justify-content: flex-end;
+    flex: 1;
+    padding-right: 1rem;
 }
 
 /* this is a class that has a navigation bar menu inside header */
 .nav {
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: left;
-    flex: 5;
-    margin: 5rem;
+    flex: 1;
+    justify-content: flex-start;
+    padding-left: 1rem;
 }
 
 /* this is the main container class */
 .main {
     display: flex;
     flex-direction: row;
-    margin-top: 12vh;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 10%;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
     gap: 100px;
 }
 
 .article {
     display: flex;
     flex-direction: column;
-    border-style: solid;
-    border-color: black;
+    justify-content: flex-start;
     gap: 25px;
-    padding: 5%;
-    flex: 4;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    flex: 3;
 }
 
 .aside {
     position: sticky;
-    border-style: solid;
-    border-color: black;
-    padding: 2%;
+    color: black;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    font-size: 30px;
     flex: 1;
     top: 12vh;
     height: 83vh;
@@ -118,12 +120,12 @@ p {
 }
 
 .standard-länk {
-    color: rgb(0, 153, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
 .standard-länk:hover {
-    color: rgba(0, 153, 255, 0.514);
+    color: rgba(160, 160, 160, 0.514);
 }
 
 /* this is the footer container class */
@@ -145,10 +147,9 @@ p {
     display: flex;
     flex-direction: column;
     margin-top: 12vh;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 10%;
-    gap: 5px;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    justify-content: flex-start;
 }
 
 .form-container {
@@ -159,15 +160,7 @@ p {
     display: flex;
     flex-direction: column;
     padding: 5px;
-    width: 75%;
-}
-
-.col-25 {
-
-}
-
-.col-75 {
-    
+    width: 50%;
 }
 
 input[type=submit] {
@@ -240,16 +233,17 @@ input[type=submit]:hover {
     background-color: white;
 }
 
-/* ===== MEDIA QUERIES =====
+/* ===== MEDIA QUERIES ===== */
 
 /* Phones */
 @media (max-width: 600px) {
     body {
         .header {
-
+            font-size: 30px;
         }
         .main {
             flex-direction: column;
+            gap: 25px;
         }
         .aside {
             order: 1;
@@ -258,13 +252,14 @@ input[type=submit]:hover {
         }
         .article {
             order: 2;
+            width: 85%
         }
-    }
-}
-
-/* Desktop */
-@media (min-width: 1200px) {
-    body {
-        
+        .contact-main-container {
+            padding-left: 2rem;
+            width: 85%;
+        }
+        .row {
+            width: 100%;
+        }
     }
 }
